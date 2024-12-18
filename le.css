@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0 0 0 0;
+}
+Body{
+  background-color :#D0D0D0;
+}
+nav{
+  box-shadow: 2px 2px #F97201;
+}
+a{
+  text-decoration :none;
+  color: #000000;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 1em;
+}
+li{
+  text-decoration :none;
+}
+.space2{
+  position :relative;
+  top: 130px;
+  background-color: #BD5200;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+h3{
+  text-align: center;
+  position: relative;
+  top: 10px ;
+  padding: 5px;
+}
+.space3{
+  display: flex;
+  flex-direction :row ;
+  justify-content: center;
+  flex-wrap: wrap;
+  position :relative;
+  text-align: center;
+  z-index: 2;
+}
+.sec1 div:hover{
+  transition: transform 0.5s ease;
+}
+.child1:active {
+    transform: translatey(100px);
+}
+.child2:active {
+    transform: translatey(100px); }
+.child3:active {
+  transform: translatey(100px);}
+.child4:active {
+  transform: translatey(100px);}
+
+.child1, .child2, .child3, .child4{
+     transition: transform 0.5s ease;
+}
+
+.sec2{
+  display: flex;
+  flex-direction :row;
+  justify-content :center ;
+  padding: 2em;
+  gap:1em;
+}
+.sec2 div{
+  position :relative ;
+  right: 5px;
+  background-color :#FFFFFF;
+  border-radius :7px;
+  height: 400px;
+}
+.child2, .child4{
+  transform :translatey(60px);
+}
+.sec2 div p, button, h5{
+    margin-left: 10px;
+}
+.div1:active {
+  transform: translatey(100px);}
+.div2:active {
+  transform: translatey(100px);}
+.div3:active {
+  transform: translatey(100px);}
+
+.sec2 div img{
+  width: 100%;
+}
+img{
+  z-index: 2;
+  width :200px; 
+  height: 200px;
+  border-radius : 10px; 
+}
+button{
+  background-color:#F7650A;
+  color: #FFFFFF;
+  border :none;
+  border-radius :3px;
+  padding: 5px;
+  
+}
+footer h5{
+  color: #F7650A;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 30px;
+    grid-template-columns : repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 25px;
+    grid-template-columns : repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 18px;
+    grid-template-columns : repeat(1, 1fr);
+  }
+}
